@@ -157,7 +157,7 @@ class MainWindow(QMainWindow):
             dm.makeDatapack("Datapack made by Wyrmwings (https://github.com/DR4G0NW4RR10R/Wyrmwings) to display an image behind a player")
 
             successWindow = QDialog(self)
-            successWindow.setWindowTitle("Error")
+            successWindow.setWindowTitle("Success!")
             layout = QVBoxLayout()
             layout.addWidget(QLabel(f"Datapack \"{packname}\" successfully made!"))
             successWindow.setLayout(layout)
