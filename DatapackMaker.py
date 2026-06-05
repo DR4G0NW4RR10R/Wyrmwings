@@ -69,5 +69,7 @@ class DatapackMaker:
             load.write(f"scoreboard objectives add {self.scoreboardname}-toggle trigger\n") # create triggerable scoreboard
             load.write(f"scoreboard players enable @a {self.scoreboardname}-toggle\n") # enable trigger
 
-dm = DatapackMaker("testpack", "namespacetest", "image.png", "test", "wingtest")
-dm.makeDatapack("ShyftSolutions Double S wings")
+
+if __name__ == "__main__":
+    dm = DatapackMaker("testpack", "namespacetest", "image.png", "test", "wingtest")
+    dm.makeDatapack("test pack")
